@@ -30,7 +30,7 @@ st.caption(
 with st.sidebar:
     st.markdown("### Hvordan det fungerer")
     st.markdown(
-        "1. **Transcribe** — stemme → tekst (Whisper) hvis lyd\n"
+        "1. **Transcribe** — stemme → tekst (ElevenLabs Scribe) hvis lyd\n"
         "2. **Extract** — strukturerte felter via Pydantic schema\n"
         "3. **Validate** — sjekk om vi har nok info\n"
         "4. **Classify** — bil / innbo / reise / person / annet\n"
@@ -38,7 +38,7 @@ with st.sidebar:
         "6. **Draft response** — utkast til kundesvar med kilder"
     )
     st.markdown("---")
-    st.markdown("**Stack:** LangGraph · OpenAI · Whisper · Pydantic")
+    st.markdown("**Stack:** LangGraph · Anthropic Claude · ElevenLabs Scribe · Pydantic")
 
 mode = st.radio("Inndata", ["Tekst", "Stemme (lydfil)"], horizontal=True)
 
@@ -55,7 +55,7 @@ if mode == "Tekst":
 else:
     audio = st.file_uploader("Last opp lydfil (mp3, wav, m4a)", type=["mp3", "wav", "m4a"])
     if audio and st.button("Behandle saken", type="primary"):
-        # Whisper needs a real file on disk
+        # The STT API needs a real file on disk
         with tempfile.NamedTemporaryFile(suffix=Path(audio.name).suffix, delete=False) as tmp:
             tmp.write(audio.getvalue())
             state = ClaimState(voice_file_path=tmp.name)

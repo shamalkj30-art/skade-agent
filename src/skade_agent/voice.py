@@ -1,11 +1,10 @@
 """
 voice.py — speech-to-text via ElevenLabs Scribe.
 
-WHY ElevenLabs Scribe and not OpenAI Whisper:
-- The rest of the agent is on Anthropic; pulling in OpenAI just for one
-  transcription call adds a second vendor account, billing surface, and key
-  to manage. ElevenLabs Scribe gives us STT inside the same vendor we
-  already use for voice work elsewhere.
+WHY ElevenLabs Scribe:
+- One voice vendor for the whole pipeline. I already use ElevenLabs for
+  TTS in other side projects, and having STT and TTS in the same place
+  keeps the credentials surface small and the production story simple.
 - Scribe handles Norwegian competently (the model auto-detects, but we
   pass an ISO language hint for stability on short clips).
 

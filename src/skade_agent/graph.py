@@ -12,8 +12,8 @@ WHY a state graph (not a simple chain or a single mega-prompt):
    immediately clear WHICH step failed and on WHICH state.
 
 3. Each node is independently testable and swappable. Want to plug in
-   Azure OpenAI for the draft node only? Change one function — the graph
-   wiring doesn't move.
+   a different LLM provider for the draft node only? Change one function —
+   the graph wiring doesn't move.
 
 4. Same code path runs whether the input is voice or text. The transcribe
    node is the seam — branching at that single point keeps the rest of the
