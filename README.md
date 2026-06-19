@@ -5,8 +5,7 @@ A multi-step **LangGraph** agent that takes a customer's claim description
 policy line applies, retrieves the relevant clauses, and drafts a Norwegian
 customer response — refusing to guess when the input is too vague.
 
-**Live demo:** _<add Streamlit / HF Spaces URL>_
-**Trace:** _<paste a LangSmith run URL after first invocation>_
+**Live demo:** https://huggingface.co/spaces/Shamalkj30/skade-agent
 
 ---
 
