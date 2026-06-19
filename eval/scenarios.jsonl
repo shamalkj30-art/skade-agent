@@ -1,0 +1,8 @@
+{"id": "bil-01", "claim": "Jeg krasjet bilen min i går kveld i Storgata. Stor bulk på høyre side, ingen personer skadet.", "expected_skadetype": "bil", "expect_clarification": false}
+{"id": "bil-02", "claim": "Kjørte på en elg i går natt på E6 ved Moss. Bilen har stor frontskade.", "expected_skadetype": "bil", "expect_clarification": false}
+{"id": "innbo-01", "claim": "Vi kom hjem fra ferie og oppdaget innbrudd. PC, kamera og smykker er stjålet. Politiet har vært på stedet.", "expected_skadetype": "innbo", "expect_clarification": false}
+{"id": "innbo-02", "claim": "Vannlekkasje fra varmtvannsberederen har ødelagt parketten i hele stua.", "expected_skadetype": "innbo", "expect_clarification": false}
+{"id": "reise-01", "claim": "Bagasjen min kom ikke fram til Bangkok. Måtte kjøpe klær for 1800 NOK.", "expected_skadetype": "reise", "expect_clarification": false}
+{"id": "reise-02", "claim": "Jeg ble alvorlig syk dagen før avreise og må avbestille turen til Italia. Har legeerklæring.", "expected_skadetype": "reise", "expect_clarification": false}
+{"id": "vague-01", "claim": "Det skjedde noe.", "expected_skadetype": null, "expect_clarification": true}
+{"id": "vague-02", "claim": "Hei", "expected_skadetype": null, "expect_clarification": true}

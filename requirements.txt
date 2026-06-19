@@ -1,0 +1,11 @@
+langgraph>=0.2
+langchain>=0.3
+langchain-anthropic>=0.2
+langchain-community>=0.3
+langsmith>=0.1
+elevenlabs>=1.0
+faiss-cpu>=1.8
+pydantic>=2.7
+python-dotenv>=1.0
+streamlit>=1.40
+pytest>=8.0
